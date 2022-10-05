@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="mt-3">
+        <h2>Tablas de Multiplicar</h2>
+        <label > Ingrese el numero</label>
+        <input  [(ngModel)]="numeros" type="text" class="form-control" name="num" id="num" placeholder="Número">
+    </div>
+    
+
+    <div class="mb-3">
+        <button (click)="Multiplicar()" class="btn btn-primary">Ejecutar</button>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+        <h3 [innerHTML]>La tabla a observar será del número: {{this.numeros}} </h3>
+        <div *ngFor="let valores of resultados"></div>
+            {{resultados}} 
+        </div>
+    </div>
+</div>
+</div>

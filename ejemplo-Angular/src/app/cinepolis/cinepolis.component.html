@@ -1,0 +1,82 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/boostratp.min.css" rel="stylesheet">
+
+    <div class="get_in_touch">
+  <br>
+  
+<form style="background:blueviolet">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="card-body text-center">
+            <img src="http://sic.cultura.gob.mx/images/129519" width="150px" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="title" style="color:white" width="15px">Entradas</div>
+    <div class="card">
+    <div class="container">
+      <label for="text" class="contact-form- ">Nombre</label>
+      <div class="col-sm-4">
+        <input type="text" class="input-text" [(ngModel)]="nombre" name="name" placeholder="Nombre" >
+      </div>
+    </div>
+    <div class="container">
+      <label for="text" class="contact-form- ">Numero de personas</label>
+      <div class="col-sm-4">
+        <input type="text" class="input-text" [(ngModel)]="numperson" name="nump" placeholder="Numero de personas">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="card-header">
+        <legend >Tarjeta CINECO</legend>
+        <div class="col-sm-5">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" [(ngModel)]="tarjeta" name="tar" id="gridRadios1" value="1">
+            <label class="form-check-label" for="gridRadios1">
+              Si
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" [(ngModel)]="tarjeta" name="tar" id="gridRadios2" value="0">
+            <label class="form-check-label" for="gridRadios2">
+              No
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+        <label for="text" class="col-10 ">Numero boletos</label>
+        <div class="col-10">
+          <input type="text" class="form-control" [(ngModel)]="numboleto" name="numb" placeholder="Numero de boletos">
+        </div>
+      </div>
+   
+ 
+  
+      <button (click)="boleto()" class="btn btn-primary ">Pagar</button>
+    </div>
+  </form>
+  
+
+
+  <div class="" >
+    <div class="card-header">Ticket</div>
+    <div class="card-body">
+  <div class="card">
+    <div class="card-header">
+  <div class="form-group row">
+      
+  <ul>
+    <li>{{cliente}}{{nombre}}</li>
+    <li>{{total}} {{mensaje}}</li>
+  </ul>
+      
+  </div>
+    </div>
+</div>
+    </div>
+  </div>
+  
+

@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-6">
+      
+        
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Numero1</label>
+            <div class="col-sm-10">
+              <input type="text"[(ngModel)]="num1" name="num1" class="form-control" id="num1" placeholder="Numero 1">
+            </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Numero2</label>
+          <div class="col-sm-10">
+            <input type="text" [(ngModel)]="num2" name="num2" class="form-control" id="num2" placeholder="Numero 2">
+          </div>
+        </div>
+        <div class="form-group row">
+          <input type="text" [(ngModel)]="operacion" name="operacion" class=""form-control id="operacion" placeholder="¿Qué operación deseas realizar?">
+          <h3>Recuerda que debes de poner la operación con la mayúscula al inicio</h3>
+        </div>
+        <div class="form-group row">
+          <button (click)="operar()"  class="btn btn-primary" >Calcular</button>
+        </div>
+      </div>
+    <div class="col-6">
+        <h1>Resultados: {{resultado}}  </h1>
+    </div>
+</div>
